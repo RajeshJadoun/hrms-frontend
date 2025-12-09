@@ -3,7 +3,10 @@
  * Contains all configuration settings for the frontend
  */
 
-const CONFIG = {
+// Allow safe re-load on GitHub Pages without const redeclare conflicts
+window.CONFIG = window.CONFIG || {};
+
+const CONFIG = Object.assign(window.CONFIG, {
     // API Configuration
     API_BASE_URL: 'https://prenatally-nonevangelic-afton.ngrok-free.dev/api',  // Change in production
     
@@ -145,7 +148,7 @@ const CONFIG = {
     // Pagination
     DEFAULT_PAGE_SIZE: 10,
     PAGE_SIZE_OPTIONS: [10, 25, 50, 100]
-};
+});
 
 // Make CONFIG globally available
 window.CONFIG = CONFIG;
