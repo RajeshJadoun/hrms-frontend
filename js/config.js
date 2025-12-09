@@ -7,7 +7,7 @@
 var CONFIG = window.CONFIG || {};
 CONFIG = Object.assign(CONFIG, {
     // API Configuration
-    API_BASE_URL: 'https://prenatally-nonevangelic-afton.ngrok-free.dev/api/login,  // Change in production
+    API_BASE_URL: 'https://prenatally-nonevangelic-afton.ngrok-free.dev/api', // Change in production
     
     // Google OAuth Client ID
     GOOGLE_CLIENT_ID: '1029752642188-ku0k9krbdbsttj9br238glq8h4k5loj3.apps.googleusercontent.com',
@@ -160,7 +160,7 @@ CONFIG.IS_DEVELOPMENT = window.location.hostname === 'localhost' ||
 if (!CONFIG.IS_DEVELOPMENT) {
     // In production, your Flask backend should be hosted somewhere
     // Update this URL to your actual backend URL
-    CONFIG.API_BASE_URL = 'https://prenatally-nonevangelic-afton.ngrok-free.dev/api/login';
+    CONFIG.API_BASE_URL = 'https://prenatally-nonevangelic-afton.ngrok-free.dev/api';
 }
 
 // Freeze configuration to prevent modifications
