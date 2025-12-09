@@ -160,7 +160,7 @@ CONFIG.IS_DEVELOPMENT = window.location.hostname === 'localhost' ||
 if (!CONFIG.IS_DEVELOPMENT) {
     // In production, your Flask backend should be hosted somewhere
     // Update this URL to your actual backend URL
-    CONFIG.API_BASE_URL = 'https://prenatally-nonevangelic-afton.ngrok-free.dev/api';
+    CONFIG.API_BASE_URL = 'https://prenatally-nonevangelic-afton.ngrok-free.dev/api/login';
 }
 
 // Freeze configuration to prevent modifications
