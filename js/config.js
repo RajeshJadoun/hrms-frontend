@@ -3,10 +3,9 @@
  * Contains all configuration settings for the frontend
  */
 
-// Allow safe re-load on GitHub Pages without const redeclare conflicts
-window.CONFIG = window.CONFIG || {};
-
-const CONFIG = Object.assign(window.CONFIG, {
+// Allow safe re-load on GitHub Pages without redeclare conflicts
+var CONFIG = window.CONFIG || {};
+CONFIG = Object.assign(CONFIG, {
     // API Configuration
     API_BASE_URL: 'https://prenatally-nonevangelic-afton.ngrok-free.dev/api',  // Change in production
     
